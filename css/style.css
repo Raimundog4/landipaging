@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: rgb(255, 255, 255, 0) url(/img/background.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  }
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+  
+  header {
+    padding: 2rem 0;
+    margin-bottom: 4rem;
+  }
+
+  header .container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+ 
+  header .logo {
+    display: -webkit-box;
+    margin-top: -20px;
+    margin-left: -90px;
+  }
+
+  main {
+    text-align: center;
+    margin-top: -90px;
+  }
+
+  main img {
+    margin-top: -30px;
+    min-width: 100%;
+  }
+  
+  @media (max-width: 800px){
+    main img {
+      margin-top: -50px;
+      max-width: 100%;
+      
+    }
+  }
+
+.ct-full {
+  height: 100vh;
+  margin-top: 100px;
+  scroll-margin: inherit;
+}
+
+@media (max-width: 800px){
+  .ct-full {
+    margin-top: 100px;
+  }
+}
+
+.ct-full h3 {
+  text-align: center;
+  color: rgb(207, 4, 4);
+  
+  font-size: 2.5rem;
+  font-family: Rubik, sans-serif;
+}
+
+@media (max-width: 800px) {
+  .ct-full h3 {
+    font-size: 1.75rem;
+  }
+}
+
+  .timer {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 50px 0px;
+  }
+ .contdown {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  @media (max-width: 800px) {
+    .contdown {
+      width: 90vw;
+      gap: 5px;
+  }
+  }
+  .timer .ct-Cont {
+    display: block;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    min-width: 120px;
+    padding: 10px;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+@media (max-width: 800px) {
+.timer .ct-Cont {
+     font-size: 4rem;
+     min-width: initial;
+     width: 110px; 
+    }
+  }
+
+  @media (max-width: 1366px) {
+.timer .ct-Cont {
+  font-size: 2rem;
+}
+  }
+
+  .timer .ct-Cont span {
+    display: block;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 800px) {
+    .timer .ct-Cont span {
+      font-size: 0.75rem;
+    }
+  }
+
+  .content-card {
+    background: #ffffff;
+    border: #000000 solid 2px;
+    border-radius: 30px;
+    opacity: 95%;
+    padding: 15px;
+    margin-left: 50%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 800px) {
+  .content-card {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+}
+
+.content-card input[type="text"], .content-card input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 2px solid;
+  margin: 10px 0;
+  padding: 10px 15px;
+  box-shadow: 1px 2px 15px 0px red;
+}
+
+.content-card label {
+  display: block;
+}
+
+input[type="checkbox"] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+.content-card input[type="submit"]{
+  width: 80%;
+  margin: 15px auto 10px auto;
+  display: block;
+  background: red;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+

@@ -288,11 +288,11 @@ input[type="checkbox"] {
   margin-bottom: auto;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .site-footer {
     margin: auto;
   }
-}
+} */
 
 #social-wrapper {
 	text-align: center;

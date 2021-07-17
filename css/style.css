@@ -290,7 +290,9 @@ input[type="checkbox"] {
 
 @media (max-width: 800px) {
   .site-footer {
-    margin-top: auto;
+    margin: 10px 0;
+    padding: 10px 0;
+    margin-bottom: auto;
   }
 }
 

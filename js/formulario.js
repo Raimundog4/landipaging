@@ -5,22 +5,14 @@ form.addEventListener('submit', (e) => {
     let nome = document.getElementById('nome').value;
     let email = document.getElementById('email').value;
     console.log(nome, email);
-    let data ={
+    let data = {
         nome,
         email,
     }
     let convertData = JSON.stringify(data);
 
     localStorage.setItem('lead', convertData)
-
+    form.reset();
     alert('Seu contato foi enviado!')
 
-    let content = document.getElementById('content')
-    let levando = `<p> Salvando em nossos arquivos</p>`;
-    let finalizado = `<p>Agora, esta bem seguro</p>`
-    content.innerHTML = levando;
-    setTimeout(() => {
-    content.innerHTML = finalizado;
- }, 1000)
- })
- 
+})

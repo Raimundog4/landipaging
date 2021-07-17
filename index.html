@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Aragão Music Liquida!</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -17,52 +19,75 @@
     </header>
     <main>
         <img src="img/blackfriday.png" alt="A Black Friday">
-    <!--    <h1>Super</h1>
+        <!--    <h1>Super</h1>
         <h2>Liquidação</h2> -->
     </main>
     <section class="ct-full">
         <h3>Fim da nossa Black Friday:</h3>
-    <div class="timer">
-       <div class="contdown">
-            <div class="ct-Cont">
-                <h2 id="dias">5</h2>
-                <span id="diasTexto">Dias</span>
-            </div>
-            <div class="ct-Cont">
-                <h2 id="horas">20</h2>
-                <span id="horasTexto">Horas</span>
-            </div>
-            <div class="ct-Cont">
-                <h2 id="minutos">06</h2>
-                <span id="minutosTexto">Minutos</span>
-            </div>
-            <div  class="ct-Cont">
-                <h2 id="segundos">55</h2>
-                <span id="segundosTexto">Segundos</span>
+        <div class="timer">
+            <div class="contdown">
+                <div class="ct-Cont">
+                    <h2 id="dias">5</h2>
+                    <span id="diasTexto">Dias</span>
+                </div>
+                <div class="ct-Cont">
+                    <h2 id="horas">20</h2>
+                    <span id="horasTexto">Horas</span>
+                </div>
+                <div class="ct-Cont">
+                    <h2 id="minutos">06</h2>
+                    <span id="minutosTexto">Minutos</span>
+                </div>
+                <div class="ct-Cont">
+                    <h2 id="segundos">55</h2>
+                    <span id="segundosTexto">Segundos</span>
+                </div>
             </div>
         </div>
-   </div>
-</section>
-   <div>
-    <form id="form" class="content-card">
-        <input type="text" placeholder="Nome" id="nome" required>
-        <input type="email" placeholder="Email" id="email" required>
-        <label class="terms"><input type="checkbox" name="aceite" id="checkbox" required><span>Concordo em receber notificação!</span></label>
-        <input type="submit" name="cadastrar" value="Cadastrar!">
-    </form>
-</div>
-</div>
-<footer>
-    
-</footer>
+    </section>
+    <section class="product-list">
+        <div class="product-card">
+            <a href="#">
+                <img src="img/keyboard.jpg" alt="Nord Stage 3" class="product-img">
+            </a>
+        <span>APENAS: R$ 2.599,99</span>
+        </div>
+        <div class="product-card">
+            <a href="#">
+                <img src="img/fender.jpg" alt="Nord Stage 3" class="product-img">
+            </a>
+        <span>APENAS: R$ 1.599,99</span>
+        </div>
+        <div class="product-card">
+            <a href="#">
+                <img src="img/baixo.jpg" alt="Nord Stage 3" class="product-img">
+            </a>
+        <span>APENAS: R$ 599,99</span>
+        </div>
+    </section>
+    <div class="form-container">
+        <form id="form" class="content-card">
+            <input type="text" placeholder="Nome" id="nome" required>
+            <input type="email" placeholder="Email" id="email" required>
+            <label class="terms"><input type="checkbox" name="aceite" id="checkbox" required><span>Concordo em receber
+                    notificação!</span></label>
+            <input type="submit" name="cadastrar" value="Cadastrar!">
+        </form>
+    </div>
+    </div>
+    <footer>
+
+    </footer>
     <script src="js/contador.js"></script>
     <script src="js/formulario.js"></script>
     <script language="JavaScript">
         function protegercodigo() {
-        if (event.button==2||event.button==3){
-            alert('Acesso negado!');}
+            if (event.button == 2 || event.button == 3) {
+                alert('Acesso negado!');
+            }
         }
-        document.onmousedown=protegercodigo
+        document.onmousedown = protegercodigo
     </script>
 </body>
+
 </html>

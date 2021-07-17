@@ -152,7 +152,7 @@ a {
   @media (max-width: 800px) {
   .product-list {
     flex-direction: column;
-    margin-left: -50px;
+    margin-left: -35px;
     
   }
 }

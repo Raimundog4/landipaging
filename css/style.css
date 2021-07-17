@@ -208,7 +208,7 @@ a {
   @media (max-width: 800px) {
     .formulario {
       text-align: center;
-      font-size: 0.80rem;
+      font-size: 0.75rem;
       margin-top: 20px;
     }
   }
@@ -321,4 +321,10 @@ input[type="checkbox"] {
 
 .footer-nav p {
 	text-align: center;
+}
+
+@media (max-width: 800px) {
+  .footer-nav p {
+    font-size: 0.75rem;
+  }
 }

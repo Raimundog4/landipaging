@@ -287,6 +287,12 @@ input[type="checkbox"] {
   margin-bottom: auto;
 }
 
+@media (max-width: 800px) {
+  .site-footer {
+    margin-bottom: auto;
+  }
+}
+
 #social-wrapper {
 	text-align: center;
 }

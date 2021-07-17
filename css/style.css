@@ -21,6 +21,12 @@
     z-index: -1;   
   }
 
+@media (max-width: 800px) {
+  body::after {
+    min-height: 280vh;
+  }
+}
+
 a {
     color: currentColor;
     text-decoration: none;
@@ -288,11 +294,11 @@ input[type="checkbox"] {
   margin-bottom: auto;
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
   .site-footer {
-    margin: auto;
+    min-width: auto;
   }
-} */
+}
 
 #social-wrapper {
 	text-align: center;

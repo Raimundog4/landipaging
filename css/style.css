@@ -55,7 +55,7 @@ a {
   
   @media (max-width: 800px){
     main img {
-      margin-top: -50px;
+      margin-top: -5px;
       max-width: 100%;
       
     }
@@ -152,6 +152,7 @@ a {
   @media (max-width: 800px) {
   .product-list {
     flex-direction: column;
+    margin-top: auto;
     margin-left: -37px;
     
   }
@@ -289,7 +290,7 @@ input[type="checkbox"] {
 
 @media (max-width: 800px) {
   .site-footer {
-    margin-bottom: auto;
+    margin-bottom: -10px;
   }
 }
 

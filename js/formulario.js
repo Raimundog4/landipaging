@@ -1,18 +1,18 @@
-const form = document.getElementById('form')
+const formulario = document.getElementById('form')
 
-form.addEventListener('submit', (e) => {
+formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-    let nome = document.getElementById('nome').value;
-    let email = document.getElementById('email').value;
-    console.log(nome, email);
-    let data = {
-        nome,
-        email,
+    let nomeUsuario = document.getElementById('nome').value;
+    let emailUsuario = document.getElementById('email').value;
+    console.log(nomeUsuario, emailUsuario);
+    let dados = {
+        nomeUsuario,
+        emailUsuario,
     }
-    let convertData = JSON.stringify(data);
+    let convertData = JSON.stringify(dados);
 
     localStorage.setItem('lead', convertData)
-    form.reset();
-    alert('Seu contato foi enviado!')
+    formulario.reset();
+    Swal.fire('Dados cadastrados com sucesso!')
 
 })

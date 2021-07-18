@@ -1,26 +1,26 @@
-function countdown() {
-    let now = new Date();
+function contagemRegressiva() {
+    let dataAtual = new Date();
                 
-    let eventDate = new Date("jul 18, 2021 23:59:59");
-    let currentTiime = now.getTime();
-    let eventTime = eventDate.getTime();
-    let remTime = eventTime - currentTiime;
+    let dataExpiracao = new Date("jul 31, 2021 23:59:59");
+    let tempoAtual = dataAtual.getTime();
+    let tempoExpiracao = dataExpiracao.getTime();
+    let tempoRestante = tempoExpiracao - tempoAtual;
     
-    let d = Math.floor(remTime / (1000 * 60 * 60 * 24));
-    let h = Math.floor((remTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let m = Math.floor((remTime % (1000 * 60 * 60)) / (1000 * 60));
-    let s = Math.floor((remTime % (1000 * 60)) / 1000);
+    let dias = Math.floor(tempoRestante / (1000 * 60 * 60 * 24));
+    let horas = Math.floor((tempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutos = Math.floor((tempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+    let segundos = Math.floor((tempoRestante % (1000 * 60)) / 1000);
 
-    document.getElementById("dias").textContent = d;
-    document.getElementById("dias").innerText = d;
-    document.getElementById("horas").textContent = h;
-    document.getElementById("minutos").textContent = m;
-    document.getElementById("segundos").textContent = s;
-    setTimeout(countdown, 1000);
+    document.getElementById("dias").textContent = dias;
+    document.getElementById("dias").innerText = dias;
+    document.getElementById("horas").textContent = horas;
+    document.getElementById("minutos").textContent = minutos;
+    document.getElementById("segundos").textContent = segundos;
+    setTimeout(contagemRegressiva, 1000);
 
     
-     if (remTime < 0) {
-      clearInterval(countdown);
+     if (tempoRestante < 0) {
+      clearInterval(contagemRegressiva);
       
       document.getElementById("dias").innerHTML = " ";
       document.getElementById("horas").innerHTML = " ";
@@ -28,4 +28,4 @@ function countdown() {
       document.getElementById("segundos").innerHTML = "<small>FIM</small>"; 
       } 
   }
-  countdown();
+  contagemRegressiva();
